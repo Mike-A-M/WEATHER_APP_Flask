@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>My Weather App</title>
+</head>
+<body>
+    <h1>Whats the weather like today?</h1>
+    <form method="POST">
+        <input type="text" name="city" placeholder="Enter your city">
+        <button type="submit">Get Weather</button>
+    </form>
+    <p>{{ weather.city}}</p>
+    <p>{{ weather.temperature}}</p>
+    <p>{{ weather.description}}</p>
+    <p>{{ weather.icon}}</p>
+</body>
+</html>
+
