@@ -14,10 +14,11 @@
         <input type="text" name="city" placeholder="Enter your city">
         <button type="submit">Get Weather</button>
     </form>
-    <p>{{ weather.city}}</p>
-    <p>{{ weather.temperature}}</p>
-    <p>{{ weather.description}}</p>
-    <p>{{ weather.icon}}</p>
+    {% for weather in weather_data %}
+     <p>{{ weather.city}}</p>
+     <p>{{ weather.temperature}}</p>
+     <p>{{ weather.description}}</p>
+    {% endfor %}
 </body>
 </html>
 
